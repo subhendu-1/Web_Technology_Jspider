@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElement Selector</title>
+    <style>
+        /* #jsp{
+            color: orange;
+        } */
+
+        h1::first-letter{
+            color: orange;
+        }
+        p::before{
+            content: "This is Subhendu";
+        }
+
+        p::after{
+            content: "This Subhendu content";
+        }
+
+       p::selection{    /*  Whent we select extra transformation is add */
+            background-color: brown;
+        }
+  /* ?? some part of the html element we apply this psedu element */
+        p::first-line{  
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1><span id="jsp">J</span>spiders</h1>
+    <h1>Jspiders</h1>
+    <!-- <p>This is Subhendu</p> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo magni, aspernatur id facere a commodi voluptates dolores. Consequatur excepturi fugit atque explicabo sapiente officia dolor, rem obcaecati vel nostrum!</p>
+</body>
+</html>
