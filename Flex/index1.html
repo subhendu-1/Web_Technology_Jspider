@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            /* in dsplay flex by default all the item  in a row wise */
+            display: flex;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            flex-direction: column;
+            /* when we want to sapce between we use this  */
+            /* column-gap: 10px; */
+            /* when we want to sapce between row wise  we use this  */
+            /* row-gap: 10px; */
+
+            /* short cut is  */
+            gap: 10px 30px;
+            gap: 10px;
+             /* using this atribut widht is not decrease  base on the item it will divided the we page*/ 
+            flex-wrap: wrap;
+
+
+            /* for combination of flex direction and wrap is  flex-flow:direction wrap */
+            flex-flow: column wrap;
+
+            /* justify-content: center; */
+
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            justify-content: center;
+            /* align-items: center; */
+            /* aligh all the content in center we use this with out flex align-conten is not work */
+            align-content: end;
+
+
+            /* in css x axiendMain axis and y axis is Cross axis justify-content: ; work on bascis of dirction so this work like justify-content: Main axis;  align-content: cross axis */
+
+
+            /* if divection is column wise justify-content: cross axis;  align-content:main axis */
+
+
+            border: 2px solid red;
+            height: 500px;
+        }
+        .item{
+            background-color: black;
+            color: white;
+            width: 100px;
+            height: 80px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item-1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        
+        
+    </div>
+</body>
+</html>
