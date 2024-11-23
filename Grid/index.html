@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* we cant able to use reapt functinon in grid row  */
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: auto;
+            border: 2px solid red;
+            height: 400px;
+            gap: 20px;
+
+
+        }
+
+        .items{
+            /* height: 100px ;
+            width: 100px; */
+            background-color: aqua;
+        }
+
+        .three{
+            grid-column: 3/4;
+            grid-row: 1/3;
+        }
+
+        .four{
+            grid-column: 1/3;
+            grid-row: 2/3;
+        }
+
+        .six{
+            grid-row: 3/4;
+            grid-column: 2/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items one">Item-1 </div>
+        <div class="items two">Item-2 </div>
+        <div class="items three">Item-3 </div>
+        <div class="items four">Item-4 </div>
+        <div class="items five">Item-5 </div>
+        <!-- <div class="items six">Item-6 </div> -->
+        <!-- <div class="items">Item-7 </div>
+        <div class="items">Item-8 </div> -->
+    </div>
+</body>
+</html>
