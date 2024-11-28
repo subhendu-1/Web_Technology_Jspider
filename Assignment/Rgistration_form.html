@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragistration From</title>
+
+    <style>
+        *{
+            margin: 0px;
+
+        }
+        .all_nav{
+            display:flex ;
+            background-color: rgb(133, 137, 137);
+            justify-content: space-between;
+            padding: 15px;
+           
+            
+        }
+        
+        .nav_item{
+            margin-left: -10px;
+            font-size: 18px;
+        }
+        nav,div,img{
+            height: 20px;
+           
+            
+        }
+
+        nav>div>button{
+            background-color: rgb(234, 165, 4);
+            font-size: 15px;
+            width: 100px;
+            height: 25px;
+            border-radius: 15px;
+            border: none;
+
+            color: white;
+            font-weight: bold;
+            /* margin: ; */
+
+        }
+        .nav_two{
+            margin-left: 210px;
+        }
+        /* .nav_three{
+            margin-right: 70px;
+        } */
+        .nav_four{
+            margin-right: 150px;
+        }
+
+        .container{
+            background-color: black;
+            margin-top: 25px;
+            height: 1000px;
+        }
+
+
+        form{
+            font-size: 20px; 
+            margin: 10px 300px; 
+            padding: 100px;
+            position: relative;
+        }
+
+        input{
+            font-size: 10px;
+            border-radius: 7px;
+            width: 200px;
+            height: 22px;
+            border: none;
+            margin-bottom: 5px;
+        }
+        th{
+            color: white;
+            font-size: 20px;
+        }
+
+        table{
+            width: 100%;
+            text-align: center;
+            
+        }
+        form button{
+            background-color: rgb(234, 165, 4);
+            font-size: 15px;
+            width:200px;
+            height: 25px;
+            border-radius: 15px;
+            border: none;
+
+            color: white;
+            font-weight: bold;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="all_nav">
+        <img src="../banking.jpg" alt="" class="nav_one">
+        <div class="nav_item nav_two">Home</div>
+        <div class="nav_item nav_three">About</div>
+        <div class="nav_item nav_four">Notice</div>
+
+        <button class="nav_five">Register</button>
+    </div>
+    </nav>
+
+
+    <div class="container">
+        <form action="">
+            <fieldset>
+                <table>
+                    <tr>
+                        <th>Ragistration Form</th>
+                    </tr>
+
+                    <tr>
+                        <td><input type="text" placeholder="First Name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" placeholder="Mobile Number"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="Password"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Confirm Password"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button>Rgister</button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
