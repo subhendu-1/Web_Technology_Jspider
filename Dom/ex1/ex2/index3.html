@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qurey Selector</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        div{
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button{
+            background-color: blue;
+            color: white;
+            padding: 7px 10px;
+            /* text-decoration: none; */
+            border: none;
+            margin-top: 19px;
+            cursor: pointer;
+
+        }
+
+        h2{
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 id="printing-message">What is your name</h2>
+        <button onclick="PrintName()">Click Here</button>
+    </div>
+
+    <script>
+        function PrintName(){
+            let displayName = document.getElementById('printing-message');
+            displayName.textContent = "Subhendu Adak";
+            displayName.style.color = "red";
+        }
+
+        // PrintName();
+    </script>
+</body>
+</html>

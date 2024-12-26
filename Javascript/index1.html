@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        main();
+        function main(){
+            console.log(StrongmNum(145));
+        }
+        function sum(n,count){
+            if(n == 0) 
+                return count;
+            return sum(Math.trunc(n/10),count+1);
+        }
+
+
+        function sumOfDigit(n,sum){
+            if(n ==0) return sum;
+            // let digit = n%10;
+            sum += n%10;
+            return sumOfDigit(Math.trunc(n/10),sum);
+
+
+        }
+        
+        function sumOfD(n){
+            if(n == 0) return n;
+            return n%10 + sumOfD(Math.trunc(n/10));
+        }
+
+
+        // write a program to add all even digit
+
+        // function evenDigit(n,sum){
+        //     if(n == 0) return sum;
+
+        //     let digit  = n % 10;
+        //     if( digit % 2 == 0){
+        //         sum += digit;
+        //     }
+
+        //     return  evenDigit(Math.trunc(n/10),sum);
+        // }
+
+
+        
+        
+        function evenDigit(n){
+            if(n == 0) return n;
+            
+            if((n%10) % 2 == 0) return n%10 + evenDigit(Math.trunc(n/10));
+            
+            return  evenDigit(Math.trunc(n/10));
+        }
+        // write a program the factorial of given number by suing recursion
+
+
+        // function fact(n,mul){
+        //     if (n == 0) return mul;
+
+        //     mul *= n;
+        //     return fact(n-1,mul);
+        // }
+        function fact(n){
+            if (n == 0) return 1;
+
+          
+            return n * fact(n-1);
+        }
+        // main();
+
+
+
+        function StrongmNum(n){
+            if( n == 0) return 0;
+
+            return fact(n%10) + StrongmNum(Math.trunc(n/10));
+
+
+        }
+
+
+
+        // sum(123,0);
+    </script>
+</body>
+</html>

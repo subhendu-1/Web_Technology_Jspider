@@ -1,0 +1,78 @@
+<!-- 
+ on key word for listing perpous
+ Even is action which we perform on browser
+  -->
+
+  <!-- Event Handler -->
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qurey Selector</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        div{
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+        }
+
+        button{
+            background-color: blue;
+            color: white;
+            padding: 7px 10px;
+            /* text-decoration: none; */
+            border: none;
+            margin-top: 19px;
+            cursor: pointer;
+
+        }
+
+        h2{
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 id="printing-message">What is your name</h2>
+        <button onclick="PrintName()">Click Here</button>
+        <button id="btn-name">Change Name</button>
+        <button id="btn-name-1">Change Name</button>
+    </div>
+
+    <script>
+
+        let displayName = document.getElementById('printing-message');
+        // Inline Event Handler
+        function PrintName(){
+            
+            displayName.textContent = "Subhendu Adak";
+            displayName.style.color = "red";
+        }
+
+        // Handlin Event by using Event Properties
+
+        let changeName = document.getElementById('btn-name');
+
+        changeName.onclick = function(){
+            displayName.textContent = "Rajat Jana";
+            displayName.style.color = "blue";
+        }
+
+        // Handling Event By Using addEventListener() method 
+
+        let clickBtn_2 = document.querySelector('#btn-name-1');
+
+        clickBtn_2.addEventListener('click',function(){
+            displayName.textContent = "Raj Kahrwar";
+            displayName.style.color = "green";
+        });
+        // PrintName();
+    </script>
+</body>
+</html>

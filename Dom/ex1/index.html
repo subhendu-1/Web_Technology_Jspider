@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Dicous aobut DOM</h2>
+
+        <ul>
+            <li>Window</li>
+            <li>Dom</li>
+            <li>Bom</li>
+        </ul>
+    </div>
+ <!-- Script Code -->
+    <script>
+        let bodyTag = document.body;
+        console.log(bodyTag);
+
+        let h1Tag = document.body.h1; //undifine  // here h1 properties  is not under body object thats why it is print undefine
+
+        //if we want to acess the regulat element then we use methods
+
+
+
+        let h2Tag = document.getElementById('header');
+        console.log(h2Tag);
+        let tags = document.getElementsByTagName('li');
+        console.log(tags);
+
+        let listTag = document.getElementsByClassName('course');
+        console.log(listTag);
+        let cssSlectore = document.getElementById('body>h1');// insted of this go for querySelecror
+        console.log(cssSlectore);
+        let cssQurey = document.querySelector('#li'); // it will return only first elemnt only if we print all the matches we use
+        console.log(cssQuery);
+
+        let cssQAll = document.querySelectorAll('#li');// quree selecttor method is use to return first two match 
+
+        console.log(cssQAll);
+
+    </script>
+</body>
+</html>
